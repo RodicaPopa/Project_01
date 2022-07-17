@@ -113,6 +113,92 @@ public class LogicalOperations {
                 return false;
             }
     }
+
+    public void printToHundred(int x) {
+        for (int i = x; i <= 100; i++) {
+            System.out.println(i);
+        }
+    }
+
+    public void countMinusHundred(int b) {
+
+        for (int i = b; i >= -100; i--) {
+
+            System.out.println(i);
+
+        }
+
+    }
+    public void countBetween(int c, int d) {
+        for (int i = c; i <= d; i++) {
+            System.out.println(i);
+        }
+        for (int i = c; i >= d; i--) {
+            System.out.println(i);
+        }
+
+    }
+
+    //Creati o metoda in clasa LogicalOp,
+    // care sa primeasca doi parametrii de tip numar.
+    // Metoda trebuie sa verifice care dintre cele doua numere este mai mare,
+    // si sa execute o numaratoare crescatoare de la cel mai mic la cel mai mare.
+    // (ex: daca int x e primul parametru iar int y  este cel de-al doilea, daca x  este mai mare decat y,
+    // atunci numaratoarea sa fie de la y la x).
+    //Atentie la crearea tipului metodei, deoarece metoda afiseaza, nu returneaza.
+    //Apelati metoda in clasa Main, metoda main() pentru a verifica daca functioneaza.
+    public void countBetweenef(int e, int f) {
+        if(e < f){
+            for (int i = e; i <= f; i++) {
+                System.out.println(i);
+            }
+        } else if(f < e){
+            for (int i = f; i <= e; i++) {
+                System.out.println(i);
+            }
+        }else{
+            System.out.println("Numbers are equals");
+        }
+    }
+    public void displayEvenNumbers() {
+
+        for(int i = 0; i<= 100;i++){
+
+            if(i % 2 == 0){
+
+                System.out.println(i);
+
+            }
+
+        }
+
+    }
+    public void displayUnevenNumbers() {
+        for (int i = 0; i <= 100; i++) {
+            if (i % 2 != 0) {
+                System.out.println(i);
+            }
+        }
+    }
+        public int returnSum(int a) {
+            int sum = 0;
+            for(int i = a; i<= 100;i++){
+                sum += i;
+            }
+
+            return sum;
+
+        }
+    public int returnAverage(int a) {
+        int sum = 0;
+        int counter = 0;
+        for(int i = a; i<= 100;i++){
+            sum += i;
+            counter ++;
+        }
+        return sum/counter;
+
+    }
     }
 
 
